@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.damian.myapplication.ItemActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tritace"
+        android:id="@+id/lek_nazwa"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/dawka_lek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_wybierz"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp"
+        android:text="100mg"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button_wybierz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dawka_lek"
+        android:layout_alignStart="@+id/lek_nazwa"
+        android:layout_below="@+id/lek_nazwa"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Wybierz"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
